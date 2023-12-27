@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример HTML разметки</title>
+    <link rel="stylesheet" href="static/styl.css">
+</head>
+<body>
+    <div id="result">
+        <p>{{ result|safe }}</p>
+    </div>
+        <div id='inputm'>
+            <form method="post">
+                {% csrf_token %}
+                <label for="query"></label>
+                <input type="text" id="query" name="query">
+                <button type="submit">Отправить</button>
+                
+                <div id='but'>
+                    <label for="python"><img src='static/python.png' alt='python'></label>
+                    <input type="radio" id="python" name="lang" value='Write on Python'>
+
+                    <label for="JavaScript"><img src='static/js.png' alt='JavaScript'></label>
+                    <input type="radio" id="JavaScript" name="lang" value='Write on JavaScript'>
+            
+                    <label for="C++"><img src='static/c++.png' alt='C++'></label>
+                    <input type="radio" id="C++" name="lang" value='Write on C++'>
+
+                    <label for="C"><img src='static/c.png' alt='C'></label>
+                    <input type="radio" id="C" name="lang" value='Write on C'>
+
+                    <label for="PHP"><img src='static/php.png' alt='PHP'></label>
+                    <input type="radio" id="PHP" name="lang" value='Write on PHP'>
+
+                    <label for="C#"><img src='static/c_sharp.png' alt='C#'></label>
+                    <input type="radio" id="C#" name="lang" value='Write on C#'>
+
+                    <label for="Java"><img src='static/java.png' alt='Java'></label>
+                    <input type="radio" id="Java" name="lang" value='Write on Java'>
+                </div>
+            </form>
+           
+    </div>
+    <script>
+        const resultElement = document.getElementById('result');
+        resultElement.innerHTML = marked(resultElement.innerHTML);
+    </script>
+</body>
+</html>

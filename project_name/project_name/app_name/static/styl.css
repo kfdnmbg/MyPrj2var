@@ -1,0 +1,144 @@
+#but {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #but label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    flex-basis: 50%;
+  }
+  
+  #but label img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    flex: 0 0 auto;
+  }
+  
+  #but input[type="radio"] {
+    display: none;
+  }
+  
+  #result {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 700px;
+    
+    border-radius: 10px;
+    color: #fff;
+    font-family: "American Typewriter", serif;
+    font-size: 12px;
+    text-align: center;
+    z-index: 9999;
+    padding: 10px;
+    overflow: auto;
+  }
+  
+  #inputm {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 150px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "American Typewriter", serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  max-width: 150px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+
+body {
+  background-color: #424242;
+}
+
+
+h1 {
+  font-family: "American Typewriter", serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+    padding: 10px;
+    overflow: auto;
+}
+
+
+code {
+  background-color: #333;
+  color: #fff;
+  border-radius: 0.3em;
+  padding: 4px 5px 6px;
+  white-space: nowrap;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: left;
+  overflow: auto;
+  text-indent: 1em;
+  user-select: text;
+}
+
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+ .selected {
+    background-color: yellow;
+    color: black;
+    border: 1px solid black;
+  }
